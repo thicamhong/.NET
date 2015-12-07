@@ -19,6 +19,11 @@ Pour faire les associations :
 - relation n : clic droit sur la propriété > Afficher en tant qu'associations de collection
 */
 
+/*
+La création du projet FormationLibrary : 
+clic droit sur solution > ajout nouveau projet > Sélectionner "bibliothèques de classes" (sans "(packages)")
+*/
+
 namespace FormationLibrary
 {
     // ATTENTION : Bien penser à mettre public devant la classe sinon elle est consideree comme private

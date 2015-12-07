@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+/*
+La création du projet FormationConsole : 
+clic droit sur solution > ajout nouveau projet > Sélectionner "application console")
+*/
 namespace FormationConsole
 {
     class Program
