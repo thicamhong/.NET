@@ -56,6 +56,8 @@ namespace FormationLibrary
         public double Price { get; set; }
         public Category Category { get; set; }
         public Publisher Publisher { get; set; }
+
+        // On l'initialise sinon cela fera NullPointerException
         public List<Author> Authors { get; set; } = new List<Author>();
 
         // Pour le polymorphisme => le mot cle abstract

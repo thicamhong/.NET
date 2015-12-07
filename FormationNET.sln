@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationLibrary", "Formati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationUnitTest", "FormationUnitTest\FormationUnitTest.csproj", "{6648EF3B-7572-4B71-AE54-8856D1105CD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationEF", "FormationEF\FormationEF.csproj", "{0C6BFEBD-CB53-4103-A3D1-11D79D2D839E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationEFTest", "FormationEFTest\FormationEFTest.csproj", "{3492523D-6D83-4FFE-9140-4F4071F294C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{6648EF3B-7572-4B71-AE54-8856D1105CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6648EF3B-7572-4B71-AE54-8856D1105CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6648EF3B-7572-4B71-AE54-8856D1105CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C6BFEBD-CB53-4103-A3D1-11D79D2D839E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C6BFEBD-CB53-4103-A3D1-11D79D2D839E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C6BFEBD-CB53-4103-A3D1-11D79D2D839E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C6BFEBD-CB53-4103-A3D1-11D79D2D839E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3492523D-6D83-4FFE-9140-4F4071F294C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3492523D-6D83-4FFE-9140-4F4071F294C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3492523D-6D83-4FFE-9140-4F4071F294C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3492523D-6D83-4FFE-9140-4F4071F294C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
