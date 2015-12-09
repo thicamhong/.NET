@@ -1,0 +1,17 @@
+Custom Directives
+1- Créer directives.js et ajouter son lien dans index.html
+2- Créer la directive <phone-item/>
+3- Mettre le contenu du <li> de phones.html dans la directive
+4- Ajouter la dépendance au module
+5- Tester
+6- Porter le bouton Add to Basket en directive avec contrôleur intégré
+7- Tester
+8- Ajouter le bouton Add to basket dans la page qui liste les téléphones
+9- Tester
+10- Créer un directive d'attribut qui affiche le nombre d'élément du panier
+11- Afficher le nombre d'élément du panier dans le bandeau noir en haut de l'écran
+12- Tester : il y a un bug ca reste à 0
+13- Créer une dépendance à $rootScope dans les contrôleurs de directive
+14- Un des contrôleurs va $broadcast un évènement tandis que l'autre contrôleur va le capturer ($on)
+15- Enlever la boite d'alerte qui affiche le nombre d'élément du panier
+16- Tester

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0C6BFEBD-CB53-4103-A3D1-11D79D2D839E}</ProjectGuid>
+    <ProjectGuid>{2B207446-5AFF-43EB-BD46-128000BD0BE8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FormationEF</RootNamespace>
@@ -51,58 +51,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractRepository.cs" />
     <Compile Include="Book.cs">
-      <DependentUpon>Formation.tt</DependentUpon>
+      <DependentUpon>FormationEF.tt</DependentUpon>
     </Compile>
+    <Compile Include="BookPartial.cs" />
+    <Compile Include="BookRepository.cs" />
+    <Compile Include="BookRepository2.cs" />
     <Compile Include="Card.cs">
-      <DependentUpon>Formation.tt</DependentUpon>
+      <DependentUpon>FormationEF.tt</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
-    <Compile Include="Formation.Context.cs">
+    <Compile Include="FormationEF.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Formation.Context.tt</DependentUpon>
+      <DependentUpon>FormationEF.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Formation.cs">
+    <Compile Include="FormationEF.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Formation.tt</DependentUpon>
+      <DependentUpon>FormationEF.tt</DependentUpon>
     </Compile>
-    <Compile Include="Formation.Designer.cs">
+    <Compile Include="FormationEF.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Formation.edmx</DependentUpon>
+      <DependentUpon>FormationEF.edmx</DependentUpon>
     </Compile>
+    <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringExtension.cs" />
     <Compile Include="sysdiagram.cs">
-      <DependentUpon>Formation.tt</DependentUpon>
+      <DependentUpon>FormationEF.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="Formation.edmx">
+    <EntityDeploy Include="FormationEF.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Formation.Designer.cs</LastGenOutput>
+      <LastGenOutput>FormationEF.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Formation.edmx.diagram">
-      <DependentUpon>Formation.edmx</DependentUpon>
+    <None Include="FormationEF.edmx.diagram">
+      <DependentUpon>FormationEF.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="FormationEF.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FormationEF.edmx</DependentUpon>
+      <LastGenOutput>FormationEF.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="FormationEF.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FormationEF.edmx</DependentUpon>
+      <LastGenOutput>FormationEF.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Formation.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Formation.edmx</DependentUpon>
-      <LastGenOutput>Formation.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Formation.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Formation.edmx</DependentUpon>
-      <LastGenOutput>Formation.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

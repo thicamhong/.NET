@@ -1,0 +1,34 @@
+﻿
+    <div ng-controller="PhoneController as c">
+        <form name="phoneForm" ng-submit="phoneForm.$valid && c.postPhone(c)"  novalidate>
+            <h1>Edit Phone {{c.phone.name}} ({{c.phone.id}})</h1>
+            <p>Editor email: <input type="email" ng-model="c.email" required></p>
+            <p>Name: <input ng-model="c.phone.name" required></p>
+            <p>Description: <input ng-model="c.phone.description"></p>
+            <p>Type: <input ng-model="c.phone.battery.type"></p>
+            <p>TalkTime: <input ng-model="c.phone.battery.talkTime"></p>
+            <p>StandbyTime: <input ng-model="c.phone.battery.standbyTime"></p>
+            <p>RAM: <input ng-model="c.phone.storage.ram"></p>
+            <p>Cell: <input ng-model="c.phone.connectivity.cell"></p>
+            <p>Wifi: <input ng-model="c.phone.connectivity.wifi"></p>
+            <p>Bluetooth: <input ng-model="c.phone.connectivity.bluetooth"></p>
+            <p>Infrared: <input type="checkbox" ng-model="c.phone.connectivity.infrared"></p>
+            <p>GPS: <input type="checkbox" ng-model="c.phone.connectivity.gps"></p>
+            <p>OS: <input ng-model="c.phone.android.os"></p>
+            <p>UI: <input ng-model="c.phone.android.ui"></p>
+            <p>Weight: <input ng-model="c.phone.sizeAndWeight.weight"></p>
+            <p>ScreenSize: <input ng-model="c.phone.display.screenSize"></p>
+            <p>Resolution: <input ng-model="c.phone.display.screenResolution"></p>
+            <p>TouchScreen: <input type="checkbox" ng-model="c.phone.display.touchScreen"></p>
+            <p>CPU: <input ng-model="c.phone.hardware.cpu"></p>
+            <p>USB: <input ng-model="c.phone.hardware.usb"></p>
+            <p>AudioJack: <input ng-model="c.phone.hardware.audioJack"></p>
+            <p>FMRadio: <input type="checkbox" ng-model="c.phone.hardware.fmRadio"></p>
+            <p>Accelerometer: <input type="checkbox" ng-model="c.phone.hardware.accelerometer"></p>
+            <p>Camera: <input ng-model="c.phone.camera.primary"></p>
+            <p><input type="submit" value="Submit"/></p>
+
+            <!-- On affiche l'etat de la forme : si elle est valide ou pas -->
+            <div>The form is {{phoneForm.$valid}}</div>
+        </form>
+    </div>

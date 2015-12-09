@@ -1,0 +1,20 @@
+﻿<Window x:Class="FormationWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FormationWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="463.091" Width="866.213">
+    <Grid>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="46,31,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Get the book" HorizontalAlignment="Left" Margin="171,32,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.223,0.772" Click="button_Click"/>
+        <Label x:Name="label" Content="Informations on the book :" HorizontalAlignment="Left" Margin="46,94,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Id :" HorizontalAlignment="Left" Margin="46,137,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.769,1.192"/>
+        <Label x:Name="label2" Content="Title :" HorizontalAlignment="Left" Margin="44,163,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Price :" HorizontalAlignment="Left" Margin="46,194,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="21" Margin="100,137,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="115"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="21" Margin="100,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="115"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="21" Margin="100,196,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="115"/>
+    </Grid>
+</Window>

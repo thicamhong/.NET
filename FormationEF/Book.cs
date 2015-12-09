@@ -12,12 +12,25 @@ namespace FormationEF
     using System;
     using System.Collections.Generic;
     
+
+    /*
+    partial repond a la problematique
+    une classe partial est une classe qui                                                                                                                              est definie sur plusieurs fichiers
+    En java, une classe = un fichier et porte le nom de la classe
+    En .NET ce n'est pas une obligation
+    CAD le fichier peut ne pas porter le meme nom et peut etre sur plusieurs fichiers
+    Donc n'importe ou dans le projet, on peut creer un autre fichier avec cette clase mais il faut absolument que cela ait le meme nameSpace et le meme nom de classe
+    En java, i lgenenre les classes automatiquement. Mais a chaeque fois qu'on le regenerait, cela ecrasait tout. En java on est oblige de faire de l'heritage
+    Ici en .NET, no. On peut faire du partial et mettre notre code sans avoir besoin de regenerer tout ca
+
+    */
     public partial class Book
     {
         public int Id { get; set; }
-        public byte[] Title { get; set; }
-        public decimal Price { get; set; }
-        public int CartId { get; set; }
+        public string Title { get; set; }
+        // Nullable<decimal> = decimal?
+        public Nullable<decimal> Price { get; set; }
+        public Nullable<int> CartId { get; set; }
     
         public virtual Card Card { get; set; }
     }

@@ -1,0 +1,40 @@
+﻿
+
+        <div class="container-fluid">
+            <!-- On définit le controller sur la <div> -->
+            <div ng-controller="PhoneListControlleur as phonesC" class="row">
+                <div class="col-md-2">
+                    <p>
+                        <!-- La valeur de input est mis dans phonesC.query (initialise a '')-->
+                        <!-- En utilisant ng-model, les modifications de c.query vont se répercutées partout -->
+                        <!-- La page va se mettre a jour dynamiquement avec les modifications de c.query-->
+                        Search: <input ng-model="phonesC.query"/>
+                    </p>
+                    <p>
+                                    <!-- La valeur du select vaut soit "name" soit "age" (dans option) -->
+                                    <!-- "age" et "name" sont des proprietes de phonesDB -->
+                                    <!-- Sa valeur est injectee dans phonesC.orderProp qui vaut "age"-->
+                                    <!-- En utilisant ng-model, ca permet de mettre a jour dynamiquement la page -->
+                        Sort by:    <select ng-model="phonesC.orderProp">
+                                        <option value="name">Alphabetical</option>
+                                        <option value="age">Newest</option>
+                                    </select>
+                    </p>
+                </div>
+                <div class="col-md-10">
+                    <ul class="phones">
+                                    <!-- On va filtrer l'affichage en fonction des filtres orderProp (du select) et query (de l'input) -->
+                        <li ng-repeat="phone in phonesC.phones | orderBy:phonesC.orderProp | filter:phonesC.query " class="thumbnail phone-listing">
+<!--
+                            <a href="#/phone/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}" /></a>
+                            <p><a href="#/phone/{{phone.id}}">{{phone.name}}</a> : </p>
+                            <p>{{phone.snippet}}</p>
+-->
+                            <phone-item></phone-item>
+                            <basket-item></basket-item>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
